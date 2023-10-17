@@ -1,0 +1,420 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+body
+{
+    overflow-x: hidden;
+    background-image: url("/img/istockphoto-985162862-612x612.jpg");
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+    user-select: none;
+}
+
+body::after
+{
+    content: "\00a9\2002Kinetik Atmosfere 2023 - ALL RIGHTS RESERVED";
+    position: fixed;
+    bottom: 0;
+    
+    padding: 5px 0;
+    color: #E9A092;
+    background-color: #161535;
+    
+    width: 100%;
+    text-align: center;
+}
+
+#container
+{
+    color: #161535;
+    max-width: 80vw;
+}
+
+#top
+{
+    margin: 4.75px 0;
+}
+
+#navbar
+{
+    padding: 0 25px;
+
+    height: max-content;
+
+    grid-template-areas: 
+    "logo       pageNames joinToday"
+    "brandName  pageNames joinToday";
+
+    align-items: center;
+    justify-content: space-between;
+}
+
+#brandIdentity
+{
+    text-decoration: none;
+    color: inherit;
+}
+
+#logo
+{
+    grid-area: logo;
+
+    width: max-content;
+}
+
+#logo img
+{
+    width: 75px;
+    mix-blend-mode: darken;
+}
+
+#brandName
+{
+    font-weight: bold;
+    grid-area: brandName;
+    
+    width: max-content;
+}
+
+#pageNames
+{
+    grid-area: pageNames;
+    width: 37.5vw;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#pageNames li
+{
+    box-sizing: border-box;
+    list-style: none;
+
+    list-style: none;
+    border: 2px solid transparent;
+    padding: 5px;
+    
+    position: relative;
+
+    cursor: pointer;
+}
+
+#pageNames li::before
+{
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    
+    z-index: -1;
+    
+    background: linear-gradient(to left, #E9A092 , #E9A092, transparent);
+    
+    border-right: 1px solid #161535;
+    
+    transform: scaleX(0);
+    transform-origin: right;
+    
+    transition: transform 0.375s 0.125s ease-in-out;
+}
+
+#pageNames li:hover::before
+{
+    background: linear-gradient(to left, #E9A092 , #E9A092, transparent);
+    
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+#joinToday
+{
+    grid-area: joinToday;
+}
+
+#section1
+{
+    height: 50vh;
+    justify-content: space-around;
+}
+
+#section1Left
+{
+    text-align: center;
+    justify-content: center;
+
+    width: 100%;
+}
+
+.paragraph
+{
+    margin: 10px 0;
+}
+
+#heading1:hover, #p1:hover
+{
+    color: #E04835;
+    cursor: grab;
+
+    transition: all 0.25s ease-in-out;
+}
+
+#section1Right
+{
+    width: 100%;
+}
+
+#section1Right img
+{
+    width: 200%;
+}
+
+#section2
+{
+    padding-left: 25px;
+}
+
+#heading2
+{
+    margin-top: 10px;
+}
+
+#p2
+{
+    width: 50%;
+    text-align: justify;
+}
+
+#heading2:hover, #p2:hover
+{
+    color: #E04835;
+    cursor: grab;
+}
+
+#heading3
+{
+    margin-top: 10px;
+    text-align: center;
+}
+
+#heading3 b
+{
+    font-size: 32px;
+    font-weight: 300;
+    color: #E04835;
+}
+
+#s1LRContainer
+{
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.form
+{
+    display: flex;
+    flex-direction: column;
+
+    width: max-content;
+
+    background-color: white;
+    border-radius: 20px;
+    margin: 20px auto 20px auto;
+    border: solid 1px #161535;
+    
+    box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.25);
+}
+
+.form:hover
+{
+    box-shadow: 0 0 100px 0 rgba(0, 0, 0, 0.375);
+    transition: .4s;
+    transform: scale(1.02);
+}
+
+.row-one
+{
+    padding: 20px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.row-two
+{
+    padding: 20px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.text-input
+{
+    width: 60px;
+    height: 30px;
+    border-radius: 10px;
+    background-color: #E9A092;
+    border: none;
+    outline: none;
+    padding: 5px 10px;
+}
+
+.text-input:last-child
+{
+    margin-bottom: 35px;
+}
+
+#submit
+{
+    border-radius: 10px;
+    width: 140px;
+
+    margin: 15px auto 30px auto;
+}
+
+.text
+{
+    display: inline-block;
+    margin: 5px 20px 5px 8px;;
+}
+
+.row-one
+{
+    padding: 30px 20px 15px 20px;
+}
+
+.row-two
+{
+    padding: 15px 20px;
+}
+
+.container
+{
+    display: inline-block;
+    position: relative;
+    padding-left: 30px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.container input
+{
+    position: absolute;
+    opacity: 0;
+}
+
+.checkmark
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #E9A092;
+    border-radius: 50%;
+}
+
+.container input:checked ~ .checkmark
+{
+    background-color: #E04835;
+}
+
+.checkmark:after
+{
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.container input:checked ~ .checkmark:after
+{
+    display: block;
+}
+
+.container .checkmark:after
+{
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+}
+
+#section3Left
+{
+    width: 100%;
+}
+
+#bmi-container
+{
+    margin-bottom: 10px;
+}
+
+#heading4, #p3
+{
+    height: max-content;
+    margin: 0;
+}
+
+#p3
+{
+    font-size: 24px;
+}
+
+/* #section3Right 
+{
+    
+} */
+
+#section3Right img
+{
+    width: 133.562px;
+}
+
+@media only screen and (max-width: 798px)
+{
+    #navbar
+    {
+        padding: 0 12.5px;
+        column-gap: 0;
+    }
+
+    #logo img
+    {
+        width: 50px;
+    }
+
+    #brandName
+    {
+        font-size: smaller;
+    }
+
+    #pageNames li
+    {
+        font-size: 0.95rem;
+    }
+
+    #joinToday
+    {
+        padding: 5px;
+    }
+
+    #section2
+    {
+    padding-left: 0px;
+    }
+
+    #p2
+    {
+    width: 60%;
+    }
+}

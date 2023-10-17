@@ -1,0 +1,58 @@
+.min-h-screen
+{
+    min-height: 100vh;
+}
+
+.bg-red
+{
+    background-color: red;
+}
+
+.mx-auto
+{
+    margin: 0 auto;
+}
+
+.flex
+{
+    display: flex;
+}
+
+.grid
+{
+    display: grid;
+}
+
+.flex-direction-column
+{
+    flex-direction: column;
+}
+
+.btn
+{
+    padding: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: max-content;
+
+    background-color: #E9A092;
+    border-radius: 5px;
+    border-color: #161535;
+    color: #161535;
+
+    cursor: pointer;;
+
+    
+}
+
+.btn:hover
+{
+    background-color: #E04835;
+    color: #F1E2C5;
+
+    transition: all 0.25s ease-in-out;
+}
+
+.none
+{
+    display: none;
+}

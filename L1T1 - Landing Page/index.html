@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kinetik Atmosfere | Best GYM in Karachi | Best Personal Training</title>
+    <link rel="stylesheet" href="/css/utils.css">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <div id="container" class="mx-auto">
+        <header id="top" class="start">
+            <nav id="navbar" class="grid">
+                <a id="brandIdentity" href="/index.html">
+                    <div id="logo" class="mx-auto">
+                        <img src="https://dynamic.brandcrowd.com/preview/logodraft/374d2b15-7344-4429-b5b6-7e0f574b83cc/image/large.png" alt="Kinetik Atmosfere">
+                    </div>
+                    <div id="brandName" class="mx-auto">Kinetik Atmosfere</div>
+                </a>
+                <ul id="pageNames" class="flex">
+                        <li id="home">Home</li>
+                        <li id="about">About</li>
+                        <li id="services">Services</li>
+                        <li id="contactUs">Contact Us</li>
+                </ul>
+                <button id="joinToday" class="btn mx-auto">Join Today</button>
+            </nav>
+        </header>
+
+        <hr>
+
+        <main id="centre" class="middle min-h-screen">
+            <section id="section1" class="flex">
+                <div id="section1Left" class="flex flex-direction-column">
+                    <h1 id="heading1" class="primaryHeading">Experience World's Best Personal Training</h1>
+                    <p id="p1" class="paragraph">ALL PROGRESS TAKES PLACE OUTSIDE THE COMFORT ZONE!</p>
+                    <button id="letsConnect" class="btn mx-auto">Let's Connect &#8594;</button>
+                </div>
+                <div id="section1Right">
+                    <img src="/img/gym-removebg-preview.png">
+                </div>
+            </section>
+            <hr>
+            <section id="section2">
+                <h1 id="heading2" class="primaryHeading">WHY KINETIC ATMOSFERE</h1>
+                <p id="p2" class="paragraph">Kinetik Atmosfere is a fitness passion project borne from over 10 years of training experience and learning from the very best in the industry. Our coach envisioned Kinetik Atmosfere as much more than a gym but a dynamic space where expertise meets unbounded zeal! Trained by the best, our coach set out to hand-pick up and coming fitness superstars in their own right. The Kinetik Atmosfere coaching team aren't just super fit and experienced but aspirational individuals who have overcome obstacles to become the warriors they are today. This deep understanding of how transformation occurs makes KinetiX doubly effective. Our coach's mentor, touted as Dubai's best trainer, the legend always says, “Our Bodies are Starving for Motion”. Kinetik Atmosfere is where members come to feed their bodies with the energy needed to truly transform your body, mind and life. We dare our members to incorporate movement and strength in to the core of their life.</p>
+            </section>
+            <hr>
+            <section id="section3" class="flex flex-direction-column">
+                <h1 id="heading3" class="primaryHeading" ><b>B</b>ODY <b>M</b>ASS <b>I</b>NDEX CALCULATOR</h2>
+                <div id="s1LRContainer" class="flex">
+                    <div id="section3Left" class="flex flex-direction-column">
+                        <form class="form" id="form" onsubmit="return validateForm()">
+                            <div class="row-one">
+                                <input type="text" class="text-input" id="age" autocomplete="off" required/><p class="text">Age</p>
+                                <label class="container">
+                                    <input type="radio" name="radio" id="f"><p class="text">Female</p>
+                                    <span class="checkmark"></span>
+                                </label>
+                                <label class="container">
+                                    <input type="radio" name="radio" id="m"><p class="text">Male</p>
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                            <div class="row-two">
+                                <input type="text" class="text-input" id="height" autocomplete="off" required><p class="text">Height (cm)</p>
+                                <input type="text" class="text-input" id="weight" autocomplete="off" required><p class="text">Weight (kg)</p>
+                            </div>
+                            <button type="button" id="submit" class="btn mx-auto" >Submit</button>
+                        </form>
+                    </div>
+                    <div id="section3Right" class="none flex-direction-column">
+                        <div id="bmi-container" class="flex">
+                            <h1 id="heading4" class="primaryHeading">
+                                BMI: 
+                            </h1>
+                            <p id="p3" class="paragraph">
+                            </p>
+                        </div>
+                        <img id="bmi-img" src="" alt="">
+                    </div>
+                </div>
+
+
+            </section>
+        </main>
+</body>
+<script src="/js/script.js"></script>
+<script src="/js/bmi-calculator.js"></script>
+</html>
