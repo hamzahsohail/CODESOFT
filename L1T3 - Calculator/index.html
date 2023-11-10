@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/utils.css">
+</head>
+<body>
+    <div id="container" class="flex">
+        <h1 id="appName">CALCULATOR</h1>
+        <div id="calculatorBody">
+            <div id="calculatorDisplay">0</div>
+            <button id="bracket-open" class="btn flex">&#40;</button>
+            <button id="bracket-close" class="btn flex">&#41;</button>
+            <button id="percent" class="btn flex">&#37;</button>
+            <button id="all-clear" class="btn flex">AC</button>
+            <button id="seven" class="btn flex">7</button>
+            <button id="eight" class="btn flex">8</button>
+            <button id="nine" class="btn flex">9</button>
+            <button id="divide" class="btn flex">&divide;</button>
+            <button id="four" class="btn flex">4</button>
+            <button id="five" class="btn flex">5</button>
+            <button id="six" class="btn flex">6</button>
+            <button id="multiply" class="btn flex">&#215;</button>
+            <button id="one" class="btn flex">1</button>
+            <button id="two" class="btn flex">2</button>
+            <button id="three" class="btn flex">3</button>
+            <button id="subtract" class="btn flex">&minus;</button>
+            <button id="zero" class="btn flex">0</button>
+            <button id="decimal" class="btn flex">&#x2022;</button>
+            <button id="equal" class="btn flex">&#61;</button>
+            <button id="add" class="btn flex">&#43;</button>
+        </div>
+        <h1 id="instruction">USE <a onclick="backspace()">[BACKSPACE]</a> TO BACKSPACE</h1>
+    </div>
+</body>
+<script src="/js/calculator.js"></script>
+</html>
